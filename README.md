@@ -1,4 +1,4 @@
-# MafTool
+# MafTool V1.0
 Reverse Engineering Tool for Mass Air Flow and Manifold Absolute Pressure Sensors(Analog 0-5v).
 
 Originally written pre-GitHub and pre-Arduino in C/C++, Now ported to ArduinoC, and is the main MAF/MAP tool for the Mirageforum.com piggybackECU project known as Apparition-3A92.
