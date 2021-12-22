@@ -1,11 +1,11 @@
 # MafTool V1.0
 Reverse Engineering Tool for Mass Air Flow and Manifold Absolute Pressure Sensors(Analog 0-5v).
 
-Originally written pre-GitHub and pre-Arduino in C/C++, Now ported to ArduinoC, and is the main MAF/MAP tool for the Mirageforum.com piggybackECU project known as Apparition-3A92.
+Originally written in C/C++ for FPGA architecture, recently ported to ArduinoC. MafTool is the main MAF/MAP tool for the Mirageforum.com piggybackECU project known as Apparition-3A92.
 
 Can be used with any Arduino, but you might have to change the pins, currently setup for nano/uno.
 
-Pin's A0 and D4 must both be connected to the analog signal line of the Slave sensor , Pin A1 and D8 must both be connected to the Master sensor. Any sensors that do not have power supplies can be tied to the 5V rail and connected to GND on your arduino/dev board. 
+Pin's A0 and D4 must both be connected to the analog signal line of the Slave sensor , Pin A1 and D8 must both be connected to the Master sensor. sensors with over 50ma load rating should not be grounded to the arduino board, and should be grounded to chassis ground instead. Unknown sensors should never be powered directly from the Arduino/Atmel board, and should be provided an external power AND ground supply. 
 
 Program runs for 5mins(60 seconds for dyno version), and logs the following data for BOTH sensors:
 
