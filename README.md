@@ -9,7 +9,7 @@ Originally written by Tsuyoshi Perogi in C/C++ for FPGA architecture many eons a
 
 Overview:
 
--Requires Mega or Mega 2560(more then 2K SRAM required, I/O pins must be able to handle 5V, which excludes the ARM based Due boards)
+-Requires Mega or Mega 2560(might work with ARM based Due boards, but external hardware might be needed to input/output 0-5V analog signals)
 
 -Slave Sensor is the sensor you wish to map/clone/translate. Analog signal from this sensor must be connected to both D4 and A0 pins of the Mega.
 
