@@ -1,23 +1,16 @@
-# MafTool V1.0
+# SensorTool V1.0
 Reverse engineering tool for ploting the analog voltage map of a 0-5V analog sensor with unknown values against a 0-5V analog sensor with known values.
 
 Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) Sensors, but with tweaking could be used for any analog sensor translation.
 
 MAFTOOL DOES NOT PROVIDE A TRANSLATION FUNCTION, IT SIMPLY MAPS THE DATA REQUIRED TO PERFORM A MAF/MAP TRANSLATION with MAFGod or DIY MAF translator.
 
-Originally written by Tsuyoshi Perogi in C/C++ for FPGA architecture many eons ago, recently ported to C++/ArduinoC. 
 
 Overview:
 
--Requires Mega or Mega 2560(might work with ARM based Due boards, but external hardware might be needed to input/output 0-5V analog signals)
+-Slave Sensor is the sensor you wish to map/clone/translate. Analog signal from this sensor must be connected to both one analog and one digital pin.
 
--Slave Sensor is the sensor you wish to map/clone/translate. Analog signal from this sensor must be connected to both D4 and A0 pins of the Mega.
-
--Master Sensor is the sensor we are using as a reference for our map/clone/translations required. Analog 0-5V signal from this sensor must be connected to both D11 and A6 pins of the Mega. 
-
--Keep analog signal lines for both sensors AS SEPARATED AS POSSIBLE to avoid wire cross-talk. Using a separte 3 wire shielded cable for EACH sensor is recommended. 
-
--DO NOT POWER ANY SENSOR FROM AN ARDUINO I/O PIN,(ie: sensorPowerPin = HIGH:, etc etc), doing this encourages EMI and other factors which can affect the integrity of your sensitive analog signals. Use the on-board 5V rail for any sensors which do not already have a power source.  
+-Current iteration is for mapping against theGM 1,2,3 bar MAP sensor, but a sensor with known data values can be used to map the salve sensor  
 
 
 Program runs for 5mins(60 seconds for dyno version), and logs the following data:
@@ -26,7 +19,7 @@ Program runs for 5mins(60 seconds for dyno version), and logs the following data
   
   -Min/Max analog voltage values obtained during run(0-5V)
   
-  -Slope translation points of slave sensor. (used by MAFGod/your app to perform the actual translation funtion)
+  -Slope translation points of slave sensor. (used by ModBox/your app to perform the actual translation funtion)
 
 Use:
 
