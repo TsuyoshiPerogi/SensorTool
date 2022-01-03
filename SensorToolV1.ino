@@ -181,16 +181,11 @@ void setup() {
 
 void loop() {
   
-  if (freshStart = false) {
+  if (freshStart = 1) {
      unsigned long currentMillis2 = millis();
      if (currentMillis2 - previousMillis2 > interval) {
      analogWrite(OutPin, Value);  
   } else { 
-  
-  
-  
-  
-  
   
  unsigned long currentMillis = millis();
 
