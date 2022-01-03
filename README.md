@@ -1,5 +1,5 @@
 # SensorTool V1.0
-Reverse engineering tool for ploting the analog voltage map of a 0-5V analog sensor with unknown values against a 0-5V analog sensor with known values.
+Arduino-based Reverse engineering tool for ploting the analog voltage map of a 0-5V analog sensor with unknown values against a analog sensor with known values.
 
 Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) Sensors, but with tweaking could be used for any analog sensor translation.
 
