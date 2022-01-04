@@ -1,7 +1,7 @@
 # SensorTool V1.0
 Arduino-based Reverse engineering tool for ploting the analog voltage map of a 0-5V analog sensor with unknown values against a analog sensor with known values.
 
-Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) Sensors, but with tweaking could be used for any analog sensor translation.
+Currently used to provide MAF tranlation for any automobile that uses a 0-5V air flow device. Soon to include tuning functionality. 
 
 DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
 
@@ -11,10 +11,10 @@ V1.1 is for people who wish to replace only their MAF/MAP sensor with a GM 2 or 
 
 V1.2 will allow fuel injector control and a programable fuel map(+/-1% adjustments to fuel every 500rpm up to 10,000rpm), will provide identical functionality as the Apex'i S-AFC piggyback computer. Only for vehicles with V1.1 installed. WILL INCLUDE EASY TO READ NOTATION FOR USERS TO MAKE ADJUSTMENTS AND CUSTOMIZATIONS THEMSELVES.
 
-V1.3 will include schematics for your own injector driver(or you can buy one from me and ill build it for you), and will include Staged throttle body injection maps for Traditonal and electric supercharger/turbocharger(HKS, etc) applications, allowing fine tuning of high boost application without require ECU reflashing or expensive standalone management system. INJECTORS DRIVERS CAN BE USED FOR MICRO/MEGASQUIRT,MOTEC, STANDLONE APPLICATIONS AS EXTERNAL DRIVERS. 
+V1.3 will include schematics for your own injector driver(or you can buy one from me and ill build it for you), and will include Staged throttle body injection maps for Traditonal and electric supercharger/turbocharger(HKS, etc) applications, allowing fine tuning of high boost application without require ECU reflashing or expensive standalone management system. INJECTORS DRIVERS CAN BE USED FOR MICRO/MEGASQUIRT,MOTEC, STANDLONE APPLICATIONS AS EXTERNAL DRIVERS and have the appropriate timing functions for use as primary injector drivers. 
 
 
-SO MANY MORE THING PLANNED LIKE RACELOGIC STYLE TRACTION CONTROL, FLATSHIFT/NO-LIFT SHIFT, LAUNCH CONTROL, CONTROL NITROUS SYSTEM THAT APPLY APPROPRIATE TIMING/FUEL ADJUSTMENTS WHILE NITROUS ENGAGED, AND MUCH MORE. I'M HAPPY TO LISTEN TO SUGGESTIONS FROM MY USERS ON HOW TO MAKE THIS BETTER. P
+SO MANY MORE THING PLANNED LIKE RACELOGIC STYLE TRACTION CONTROL, FLATSHIFT/NO-LIFT SHIFT, LAUNCH CONTROL, CONTROL NITROUS SYSTEM THAT APPLY APPROPRIATE TIMING/FUEL ADJUSTMENTS WHILE NITROUS ENGAGED, AND MUCH MORE. I'M HAPPY TO LISTEN TO SUGGESTIONS FROM MY USERS ON WHAT FEATURE THEY WANT TO SEE, AS I ONLY BUILD/ADD FEATURES THAT I USE CURRENTLY. EMAIL HASHERBASHER@PROTONMAIL.COM WITH YOUR SUGGESTIONS, COMMENTS, OR HATE MAIL, IM HAPPY TO READ ALL OF IT ;)
 
 Removed all notation as only professionals who know what they are doing should be using this. 
 
