@@ -153,7 +153,7 @@ void finishUp() {
   Serial.print("\n");
   Serial.print("Please COPY/PASTE your diagnostic report to a .txt or notepad file for later use.");
   Serial.print("\n");
-  Serial.print("MafTool v1.0 Created by TsuYoshi Perogi. hasherbasher@protonmail.com");
+  Serial.print("SensorTool v1.0 Created by TsuYoshi Perogi. hasherbasher@protonmail.com");
   Serial.print("\n");
   
   }
