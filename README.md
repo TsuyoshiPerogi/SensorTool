@@ -31,7 +31,9 @@ Program runs for 5mins(60 seconds for dyno version), and logs the following data
   
   -Min/Max analog voltage values obtained during run(0-5V)
   
-  -Slope translation points of slave sensor.
+  -Slope translation points of slave sensor.(saved as text to on-board SDcard)
+  
+  -Once calibrated, program will begin running translation program. To remove calibration or change vehicle, just reflash firmware to return to factory settings and recalibrate.
 
 Use:
 
