@@ -5,6 +5,7 @@ Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) 
 
 MAFTOOL DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
 
+Removed all notation as only professionals who know what they are doing should be using this. 
 
 Overview:
 
