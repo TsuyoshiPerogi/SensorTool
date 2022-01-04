@@ -1,8 +1,8 @@
 
 #include <mcp_can.h>
 #include <SPI.h>
-#define standard 1  //standard is 11 bits
-#define txID 0x7DF  //0x7E9
+#define standard 1  
+#define txID 0x7DF  
 #include <EEPROM.h>
 
 
@@ -12,19 +12,19 @@ byte rxBuf[8];
 unsigned int MAP = 0;
 unsigned char txData[8] = {0x02, 0x01, 0x11, 0x55, 0x55, 0x55, 0x55, 0x55};
 
-float maxVoltVal1 = 0; // init with absurdly low value
-float minVoltVal1 = 5; // init with absurdly high value
+float maxVoltVal1 = 0; 
+float minVoltVal1 = 5; 
 
 
-int sensorValue1 = analogRead(A0);// Raw analog voltage reading from OEM MAF/MAP
-float voltage1= sensorValue1 * (5.0 / 1023.0);//Calculations to convert sensor values into valtage
+int sensorValue1 = analogRead(A0);
+float voltage1= sensorValue1 * (5.0 / 1023.0);/
 
 
-const int XPulseIN = 7;      // pulse counter pin
-float XONCycle;              //oncycle variable 
-float XOFFCycle;             // offcycle variable got microsecond
-float XT;                    // tota l time to one cycle ONCycle + OFFcycle
-int XF; // Frequency = 1/T
+const int XPulseIN = 7;     
+float XONCycle;             
+float XOFFCycle;          
+float XT;            
+int XF; 
 float XDutyCycle;
 int OutPin = 9;
 bool pointX1 = false;
@@ -162,11 +162,11 @@ void finishUp() {
 
 
 
-MCP_CAN CAN0(10); // CAN0 interface usins CS on digital pin 10
+MCP_CAN CAN0(10);
 
 
 void setup() {
-  // put your setup code here, to run once:
+
   Serial.begin(115200);
   pinMode(A0, INPUT);
   pinMode(11, OUTPUT);
@@ -175,7 +175,7 @@ void setup() {
   else
     Serial.println("**Error Initializing**");
   
-  CAN0.setMode(MCP_NORMAL);                          // Set operation mode to normal so the MCP2515 sends acks to received data.
+  CAN0.setMode(MCP_NORMAL);                        
   
 }
 
@@ -190,28 +190,28 @@ void loop() {
  unsigned long currentMillis = millis();
 
  if(currentMillis - previousMillis > interval)   {
-    CAN0.sendMsgBuf(txID, 8, txData); //request data from ECU
+    CAN0.sendMsgBuf(txID, 8, txData); 
 
-    for(byte i=0;i<20;++i){       //get 20 times unless reply arrived from the ECU 
-    CAN0.readMsgBuf(&rxId, &len, rxBuf);     // Get CAN data - 03 41 0C 3D 0F
+    for(byte i=0;i<20;++i){      
+    CAN0.readMsgBuf(&rxId, &len, rxBuf); 
      if(rxId == 0x7E8){
-        Serial.print(rxId, HEX);  //0x7E8 
+        Serial.print(rxId, HEX);  
         Serial.print("\t");
-        for(byte i = 0; i<len; i++)    // print the data
+        for(byte i = 0; i<len; i++)  
         {
             Serial.print(rxBuf[i], HEX);
             Serial.print("\t");            
         }
         Serial.println();
-        if (sensorValue1 > maxVoltVal1) { maxVoltVal1 = sensorValue1; } // record new max value
-        if (sensorValue1 < minVoltVal1) { minVoltVal1 = sensorValue1; } // record new min value
+        if (sensorValue1 > maxVoltVal1) { maxVoltVal1 = sensorValue1; } 
+        if (sensorValue1 < minVoltVal1) { minVoltVal1 = sensorValue1; } 
 
-        MAP = rxBuf[3];  //calculate the rpm
+        MAP = rxBuf[3]; 
         Serial.println(MAP);
         XONCycle = pulseIn(XPulseIN, HIGH);
         XOFFCycle = pulseIn(XPulseIN, LOW);
-        //Serial.println(XONCycle);
-        //Serial.println(XOFFCycle);
+       
+        
         XT = XONCycle + XOFFCycle;
         XDutyCycle = (XONCycle / XT) * 100;
         XF = 1000000 / XT;
@@ -223,8 +223,8 @@ void loop() {
  }
     while(1){
       
-    // Mapping points for slave sensor, change these to match your Master Sensor's techincal data values
-      if (MAP >= 20 && pointX1 == false) {// 0.273 corresponds to technical data on GM 2 bar map sensor @ 20kPa pressure reading
+    
+      if (MAP >= 20 && pointX1 == false) {/
         X1 = voltage1;
         EEPROM.put(1, X1);
         pointX1 = true;
