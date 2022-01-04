@@ -11,7 +11,7 @@ Overview:
 
 -Slave Sensor is the sensor you wish to map/clone/translate. Analog signal from this sensor must be connected to both one analog and one digital pin.
 
--Current iteration is for mapping against theGM 1,2,3 bar MAP sensor, but a sensor with known data values can be used to map the salve sensor  
+-Current iteration is for mapping against th eGM 1,2,3 bar MAP sensor, but a sensor with known data values can be used instead(MAF/MAP equipped vehicles) 
 
 
 Program runs for 5mins(60 seconds for dyno version), and logs the following data:
