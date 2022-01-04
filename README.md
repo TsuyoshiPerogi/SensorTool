@@ -1,7 +1,7 @@
 # SensorTool V1.0
 Arduino-based Reverse engineering tool for ploting the analog voltage map of a 0-5V analog sensor with unknown values against a analog sensor with known values.
 
-Currently used to provide MAF tranlation for any automobile that uses a 0-5V air flow device. Soon to include tuning functionality. 
+Currently used to provide MAF translation for any automobile that uses a 0-5V air flow device. Soon to include tuning functionality. 
 
 DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
 
