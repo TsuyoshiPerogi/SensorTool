@@ -16,7 +16,7 @@ V1.3 will include schematics for your own injector driver(or you can buy one fro
 
 SO MANY MORE THING PLANNED LIKE RACELOGIC STYLE TRACTION CONTROL, FLATSHIFT/NO-LIFT SHIFT, LAUNCH CONTROL, CONTROL NITROUS SYSTEM THAT APPLY APPROPRIATE TIMING/FUEL ADJUSTMENTS WHILE NITROUS ENGAGED, AND MUCH MORE. I'M HAPPY TO LISTEN TO SUGGESTIONS FROM MY USERS ON WHAT FEATURE THEY WANT TO SEE, AS I ONLY BUILD/ADD FEATURES THAT I USE CURRENTLY. EMAIL HASHERBASHER@PROTONMAIL.COM WITH YOUR SUGGESTIONS, COMMENTS, OR HATE MAIL, IM HAPPY TO READ ALL OF IT ;)
 
-Removed all notation as only professionals who know what they are doing should be using this. 
+Removed all notation as only professionals who know what they are doing should be using this. Contact me if you want a custom Maf translator made for you, i'm always looking to add more vehicles to the list.
 
 Overview:
 
