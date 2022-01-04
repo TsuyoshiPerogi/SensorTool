@@ -9,12 +9,12 @@ V1.0 is for vehicles with both MAF/MAP based ECU's(most 2012+ 3-4 cylinder non-t
 
 V1.1 is for people who wish to replace only their MAF/MAP sensor with a GM 2 or 3 bar map sensor. 
 
-V1.2 will allow fuel injector control and a programable fuel map(+/-1% adjustments to fuel every 500rpm up to 10,000rpm), will provide identical functionality as the Apex'i S-AFC piggyback computer. Only for vehicles with V1.1 installed. 
+V1.2 will allow fuel injector control and a programable fuel map(+/-1% adjustments to fuel every 500rpm up to 10,000rpm), will provide identical functionality as the Apex'i S-AFC piggyback computer. Only for vehicles with V1.1 installed. WILL INCLUDE EASY TO READ NOTATION FOR USERS TO MAKE ADJUSTMENTS AND CUSTOMIZATIONS THEMSELVES.
 
-V1.3 will include schematics for your own injector driver(or you can buy one from me and ill build it for you), and will include Staged throttle body injection maps for Traditonal and electric supercharger/turbocharger(HKS, etc) applications, allowing fine tuning of high boost application without require ECU reflashing or expensive standalone management system. 
+V1.3 will include schematics for your own injector driver(or you can buy one from me and ill build it for you), and will include Staged throttle body injection maps for Traditonal and electric supercharger/turbocharger(HKS, etc) applications, allowing fine tuning of high boost application without require ECU reflashing or expensive standalone management system. INJECTORS DRIVERS CAN BE USED FOR MICRO/MEGASQUIRT,MOTEC, STANDLONE APPLICATIONS AS EXTERNAL DRIVERS. 
 
 
-SO MANY MORE THING PLANNED LIKE RACELOGIC STYLE TRACTION CONTROL, FLATSHIFT/NO-LIFE SHIFT, LAUNCH CONTROL, CONTROL NITROUS SYSTEM AND APPLY APPROPRIATE TIMING/FUEL ADJUSTMENTS WHILE NITROUS ENGAGED, AND MUCH MORE. I'M HAPPY TO LISTEN TO SUGGESTIONS FROM MY USERS ON HOW TO MAKE THIS BETTER
+SO MANY MORE THING PLANNED LIKE RACELOGIC STYLE TRACTION CONTROL, FLATSHIFT/NO-LIFT SHIFT, LAUNCH CONTROL, CONTROL NITROUS SYSTEM THAT APPLY APPROPRIATE TIMING/FUEL ADJUSTMENTS WHILE NITROUS ENGAGED, AND MUCH MORE. I'M HAPPY TO LISTEN TO SUGGESTIONS FROM MY USERS ON HOW TO MAKE THIS BETTER. P
 
 Removed all notation as only professionals who know what they are doing should be using this. 
 
