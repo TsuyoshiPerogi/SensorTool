@@ -5,9 +5,9 @@ Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) 
 
 DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
 
-V1.0 is for vehicles with both MAF/MAP based ECU's(most 2012+ 3-4 cylinder non-turbo that use T-MAF part# 1525A031, which is OEM on many mitsu's). However, for complete removal, you need to figure out what you are doing with your IAT sensor. MAF/MAP MITSU'S HAVE A SUPER COOL TRICK AROUND DEFEATING THE IAT SENSOR, but i have so much open-source stuff to release you'll have to wait for a tutorial. 
+V1.0 is for vehicles with both MAF/MAP based ECU's(most 2012+ 3-4 cylinder non-turbo that use T-MAF part# 1525A031, which is OEM on many mitsu's). However, for complete removal, you need to figure out what you are doing with your IAT sensor. MAF/MAP MITSU'S HAVE A SUPER COOL TRICK AROUND DEFEATING THE IAT SENSOR, because there is actually 2 of them on-board, only 1 gets used, but i have so much open-source stuff to release you'll have to wait for a tutorial. 
 
-V1.1 is for people who wish to replace only their MAF/MAP sensor with a GM 2 or 3 bar map sensor. 
+V1.1 is for people who wish to replace only their MAF/MAP sensor with a GM 2 or 3 bar map sensor, and it only suitable for vehicles with a single Air Flow Device. 
 
 V1.2 will allow fuel injector control and a programable fuel map(+/-1% adjustments to fuel every 500rpm up to 10,000rpm), will provide identical functionality as the Apex'i S-AFC piggyback computer. Only for vehicles with V1.1 installed. WILL INCLUDE EASY TO READ NOTATION FOR USERS TO MAKE ADJUSTMENTS AND CUSTOMIZATIONS THEMSELVES.
 
