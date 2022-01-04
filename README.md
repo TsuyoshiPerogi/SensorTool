@@ -3,7 +3,7 @@ Arduino-based Reverse engineering tool for ploting the analog voltage map of a 0
 
 Currently configured for Mass Air Flow(MAF) and Manifold Absolute Pressure(MAP) Sensors, but with tweaking could be used for any analog sensor translation.
 
-MAFTOOL DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
+DOES PROVIDE A TRANSLATION FUNCTION ONCE CALIBRATED.
 
 Removed all notation as only professionals who know what they are doing should be using this. 
 
